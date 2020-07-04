@@ -15,17 +15,17 @@ app.use(bodyParser.json());
 app.post("/", (req, res) => {
   console.log(req.body, ++count);
   const twiml = new MessagingResponse();
-  if (req.body.From.indexOf("+919901582145") !== -1) {
+  if (req.body.From.indexOf("+91---") !== -1) {
     twiml.message("Hey Albert! you have a Javascript class in 2 hours");
-  } else if (req.body.From.indexOf("+918374735031") !== -1) {
+  } else if (req.body.From.indexOf("+91---") !== -1) {
     twiml.message(
       "Hey Nrupul! Todays stats are: Ninjas: 32/35 attended all classes, 30% started coding sessions.!"
     );
-  } else if (req.body.From.indexOf("+16364906661") !== -1) {
+  } else if (req.body.From.indexOf("+91---") !== -1) {
     twiml.message(
       "Hey Prateek! Todays stats are: Ninjas: 32/35 attended all classes, 30% started coding sessions."
     );
-  } else if (req.body.From.indexOf("+917387803910") !== -1) {
+  } else if (req.body.From.indexOf("+91---") !== -1) {
     twiml.message("Hey Anoop! there is a lot of work to do!");
   }
 
